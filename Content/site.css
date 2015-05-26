@@ -1,0 +1,37 @@
+﻿body {
+}
+
+.thirdWidth {
+    width: 33%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block;
+}
+
+.centerImage {
+    text-align: center;
+    display: block;
+}
+
+.footerClass {
+    display: inline-block;
+    width: 50%;
+}
+.footerLeft {
+    float: left;
+}
+.footerRight {
+    float: right;
+}
+
+#aboutnav ul { 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+#aboutnav ul li {
+    display: inline;
+    padding: 0px 20px 0px 0px;
+}
+

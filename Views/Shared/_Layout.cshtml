@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/site.css")
+    @Styles.Render("~/Content/bootstrap.css")
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+<body>
+    <header>
+
+        <div class="container">
+            <img src="http://cdn-img.easylogo.cn/gif/51/51700.gif" style="float: left; padding-left: 5%" />
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="padding-left: 5%;">
+                    <li>
+                        <a href="@Url.Action("Index", "Home")" class="ajax-get">Home</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("About", "Home")" class="ajax-get">About</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Work", "Home")" class="ajax-get">Work</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Careers", "Home")" class="ajax-get">Careers</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Contact", "Home")" class="ajax-get">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+            <div>
+                @RenderBody()
+            </div>
+            <hr />
+    <footer>
+        <div class="container">
+                <div class="footerClass">
+                    <div class="footerLeft">
+                        <p>&copy;Copyright 2014 Fake Studio</p>
+                    </div>
+                    <div class="footerRight">
+                        <ul class="nav navbar-nav" style="position:static;">
+                            <li>
+                                <a href="@Url.Action("Index", "Home")" class="ajax-get">Home</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("About", "Home")" class="ajax-get">About</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Work", "Home")" class="ajax-get">Work</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Careers", "Home")" class="ajax-get">Careers</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Contact", "Home")" class="ajax-get">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </footer>
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+</body>
+</html>
